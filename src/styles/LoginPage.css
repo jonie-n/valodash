@@ -5,7 +5,7 @@
   min-height: 100vh;
   background-color: #f3f4f6;
   background-image: url('../assets/bg.png');
-  background-size: cover; /* or contain */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   image-rendering: pixelated;
