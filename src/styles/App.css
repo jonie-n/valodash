@@ -5,14 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global font and background */
 body {
   font-family: 'Jersey 15', sans-serif;
   background-color: #f3f4f6;
   margin: 0;
   padding: 0;
   background-image: url('../assets/bg.png');
-  background-size: cover; /* or contain */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   image-rendering: pixelated;

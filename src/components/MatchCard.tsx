@@ -2,7 +2,6 @@ import React from "react";
 import { Match } from "../types/Match";
 import "./MatchCard.css";
 
-// Grab all agent icons as URLs (Vite feature)
 const agentIcons = import.meta.glob("../assets/agents/*.png", {
   eager: true,
   as: "url",
@@ -27,13 +26,12 @@ export default function MatchCard({ match }: Props) {
   const kda = ((match.kills + match.assists) / safeDeaths).toFixed(2);
   const iconUrl = getAgentIcon(match.agent);
 
-  // Format date & time nicely
   const formattedDate = new Date(match.date).toLocaleString("en-US", {
-    month: "short", // e.g. Jul
-    day: "numeric", // e.g. 30
-    year: "numeric", // e.g. 2025
-    hour: "numeric", // e.g. 8 AM
-    minute: "2-digit", // e.g. 08
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
   });
 
   return (

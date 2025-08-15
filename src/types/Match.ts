@@ -7,5 +7,5 @@ export interface Match {
   assists: number;
   win: boolean;
   date: string;
-  headshotPercentage: number; // ✅ ADD THIS
+  headshotPercentage: number;
 }

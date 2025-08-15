@@ -15,7 +15,6 @@ export default function Dashboard() {
   const [showWinsOnly, setShowWinsOnly] = useState(false);
   const [uid, setUid] = useState<string | null>(null);
 
-  // Wait for Firebase auth to resolve the user
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -27,7 +26,6 @@ export default function Dashboard() {
     return () => unsubscribe();
   }, []);
 
-  // Fetch match data once UID is available
   useEffect(() => {
     if (!uid) return;
 

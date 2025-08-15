@@ -30,7 +30,6 @@ export default function LoginPage() {
       const uid = userCredential.user.uid;
       console.log("Firebase UID:", uid);
 
-      // Auto-create mock data
       await fetch("http://localhost:3001/seed", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

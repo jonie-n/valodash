@@ -9,9 +9,8 @@ export default function SummaryBar({ matches }: SummaryBarProps) {
   const total = matches.length;
   const wins = matches.filter((m) => m.win).length;
 
-  // Safely calculate KDA for each match
   const totalKDA = matches.reduce((sum, m) => {
-    const deaths = m.deaths === 0 ? 1 : m.deaths; // avoid division by 0
+    const deaths = m.deaths === 0 ? 1 : m.deaths;
     const kda = (m.kills + m.assists) / deaths;
     return sum + kda;
   }, 0);

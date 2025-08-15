@@ -1,7 +1,7 @@
 .match-card {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* pushes icon to the right */
+  justify-content: space-between;
   gap: 12px;
   background: #fff;
   border-radius: 12px;
@@ -62,7 +62,7 @@
 .match-card__agent-icon {
   width: 80px;
   height: 80px;
-  image-rendering: pixelated; /* keep pixel art crisp */
+  image-rendering: pixelated;
   object-fit: contain;
   filter: drop-shadow(0 1px 0 rgba(0,0,0,0.05));
 }
