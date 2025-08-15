@@ -30,9 +30,11 @@ Built with React + TypeScript on the frontend, Node.js + Express on the backend,
 ## Screenshots
 
 ### Match History Page
-![Dashboard Screenshot](screenshots/home1.png)
-![Dashboard Screenshot](screenshots/home2.png)
-![Dashboard Screenshot](screenshots/home3.png)
+
+![Dashboard Screenshot](readme/home1.png)
+![Dashboard Screenshot](readme/home2.png)
+![Dashboard Screenshot](readme/home3.png)
 
 ### Login Page
-![Login Screenshot](screenshots/login.png)
+
+![Login Screenshot](readme/login.png)
